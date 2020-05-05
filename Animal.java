@@ -1,6 +1,4 @@
-public class Animalpublic{
-    class Animal {
-    }
+public class Animal {
 
     private double weight;
     final String species;
@@ -18,7 +16,7 @@ public class Animalpublic{
 
     public void feed() {
         if (weight > 0) {
-            weight += 2.00;
+            weight -= 1.00;
             System.out.println(species + " weight = " + weight);
         } else {
             System.out.println("Your pet is dead. You are terrible owner!");
@@ -34,3 +32,4 @@ public class Animalpublic{
         }
     }
 }
+

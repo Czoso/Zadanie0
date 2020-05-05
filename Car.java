@@ -13,4 +13,8 @@ public class Car {
         this.year = year;
         this.engineCapacity = engineCapacity;
     }
+
+    public int getPrice() {
+        return price;
+    }
 }
