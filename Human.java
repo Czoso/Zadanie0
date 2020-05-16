@@ -1,15 +1,22 @@
+import java.time.LocalDate;
+
 public class Human {
 
     private String name;
     private double salary;
     Animal pet;
     private Car car;
+    private int cash;
 
     public Human(String name, double salary, Animal pet, Car car) {
         this.name = name;
         this.salary = salary;
         this.pet = pet;
         this.car = car;
+    }
+    public Human(String name, int cash){
+        this.cash=cash;
+        this.name=name;
     }
 
     public void getSalary() {
