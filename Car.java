@@ -1,4 +1,6 @@
-public class Car extends Device {
+import com.company.saleable;
+
+public class Car extends Device implements saleable {
 
 
     final String manufacturer;
