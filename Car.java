@@ -1,6 +1,6 @@
 import com.company.saleable;
 
-public class Car extends Device implements saleable {
+public abstract class Car extends Device implements saleable {
 
 
     final String manufacturer;
@@ -38,4 +38,5 @@ public class Car extends Device implements saleable {
             System.out.println("no car");
         }
     }
+    public abstract void reFuel();
 }

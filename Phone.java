@@ -1,5 +1,8 @@
 public class Phone extends Device
 {
+    static final String AddressServer = "152.123.23.12";
+    static final String AppName = "Moja WSB";
+    static final double Version = 1.0;
     public Phone(int price, int year, String model) {
         super(price, year, model);
     }
@@ -24,4 +27,18 @@ public class Phone extends Device
             System.out.println("no phone");
         }
     }
+
+    public void installAnApp(String AppName) {
+
+    }
+    public void installAnApp(String AppName, double Version) {
+
+    }
+    public void installAnApp(String AppName, double Version, String ServerAddress) {
+
+    }
+    public void installAnApp(URL Url){
+
+    }
+
 }
