@@ -1,20 +1,22 @@
-public class Car {
+public class Car extends Device {
 
-    final String model;
+
     final String manufacturer;
-    private int price;
-    private int year;
     private double engineCapacity;
 
     public Car(String model, String manufacturer, int price, int year, double engineCapacity) {
-        this.model = model;
+        super(model, price, year);
         this.manufacturer = manufacturer;
-        this.price = price;
-        this.year = year;
         this.engineCapacity = engineCapacity;
     }
 
-    public int getPrice() {
-        return price;
+    public static int getPrice() {
+        return Device.getPrice();
+    }
+
+
+    public boolean turnOn()
+    {
+        return false;
     }
 }
