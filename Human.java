@@ -1,3 +1,5 @@
+import com.company.creatures.Animal;
+
 import java.time.LocalDate;
 
 public class Human {

@@ -1,4 +1,7 @@
-public class Animal {
+package com.company.creatures;
+
+import com.company.saleable;
+public class Animal implements saleable, Feedable {
 
     private double weight;
     final String species;
