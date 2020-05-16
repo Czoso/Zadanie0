@@ -7,20 +7,35 @@ public class Human {
     Animal pet;
     private Car car;
     private int cash;
+    private Phone phone;
 
-    public Human(String name, double salary, Animal pet, Car car) {
+    public Human(String name, double salary, Animal pet, Car car, Phone phone) {
         this.name = name;
         this.salary = salary;
         this.pet = pet;
         this.car = car;
+        this.phone = phone;
     }
-    public Human(String name, int cash){
+    public Human(String name, Animal pet, Car car, int cash){
         this.cash=cash;
         this.name=name;
+        this.pet = pet;
+        this.car = car;
+    }
+    public Animal getAnimal()
+    {
+        return pet;
     }
 
     public void getSalary() {
         System.out.println("Informacje o wyplacie w kwocie " + salary + "PLN pobrane dnia " + LocalDate.now());
+    }
+    public int getCash(){
+        return cash;
+    }
+    public int setCash(int cash)
+    {
+        this.cash=cash;
     }
 
     public Car getCar() {
@@ -51,4 +66,20 @@ public class Human {
             System.out.println("Zapisz sie na studia, znajdz nowa robote, albo idz po podwyzke!");
         }
     }
+    public void setCarr(Car car){
+        this.car=car;
+    }
+    public void setAnimal(Animal animal){
+        pet=animal;
+    }
+    public void setPhone(Phone phone){
+        this.phone=phone;
+    }
+    public Phone getPhone() {
+        return phone;
+    }
+    public void trade(Human buyer, Human seller, int price){
+        System.out.println("trading humans is not allowed");
+    }
+
 }
